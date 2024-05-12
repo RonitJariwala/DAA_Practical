@@ -1,6 +1,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<limits.h>
+#include<conio.h>
 
 #define MAX_VERTICES 100
 
@@ -41,7 +42,7 @@ void bellmanFord(int graph[MAX_VERTICES][MAX_VERTICES], int V, int src) {
     }
 }
 
-int main() {
+void main(){
     printf("Enter number of vertices: ");
     scanf("%d", &V);
     printf("Enter the adjacency matrix:\n");
@@ -51,5 +52,5 @@ int main() {
         }
     }
     bellmanFord(graph, V, src);
-    return 0;
+    getch();
 }
