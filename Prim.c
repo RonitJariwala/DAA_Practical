@@ -1,6 +1,7 @@
 // Online C compiler to run C program online
 #include <stdio.h>
 #include<stdlib.h>
+#include<conio.h>
 
 void main(){
     int cost[10][10],visited[10]={0},i,j,n,no_e=1,min,a,b,min_cost=0;
@@ -34,4 +35,5 @@ void main(){
         cost[a][b]=cost[b][a]=1000;
     }
     printf("\nTotal cost of Spanning Tree: %d",min_cost);
+    getch();
 }
