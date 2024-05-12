@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<conio.h>
 int i,j,k,p,table[10][10],sol[10],minCount;
 
 
@@ -65,4 +66,5 @@ void main(){
     scanf("%d",&v);
     minCount=minCoins(coins,m,v);
     printf("Minimum number of coins are required: %d\n",minCount);
+    getch();
 }
