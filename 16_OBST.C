@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <limits.h>
+#include<conio.h>
 #define MAX_NODES 100
 
 void optimalBST(float p[], int n){
@@ -35,4 +36,5 @@ int main(){
     }
     optimalBST(p,n);
     return 0;
+    getch();
 }
