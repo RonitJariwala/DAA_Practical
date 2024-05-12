@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include<conio.h>
 void knapsack(int n,float weight[],float profit[],float capacity){
     float a[20],tp=0;
     int i,j,m;
@@ -23,7 +24,7 @@ void knapsack(int n,float weight[],float profit[],float capacity){
     }
     printf("\nMaximum profit is: %f",tp);
 }
-int main() {
+void main(){
     float weight[20],profit[20],ratio[20],temp,capacity;
     int n,i,j;
     printf("\nEnter number of objects: ");
@@ -55,5 +56,5 @@ int main() {
         }
     }
     knapsack(n,weight,profit,capacity);
-    return 0;
+    getch();
 }
