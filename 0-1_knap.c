@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<conio.h>
 int i,w,k[10][10],w;
 
 int max(int i,int j){
@@ -33,4 +34,5 @@ void main(){
     scanf("%d",&capacity);
     maxP=knapsack(n,capacity,profit,weight);
     printf("\nMax Profit is: %d\n",maxP);
+    getch();
 }
