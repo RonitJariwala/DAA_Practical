@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<conio.h>
 #define MAX 100
 
 typedef struct Job{
@@ -75,6 +76,9 @@ void jobSequencingWithDeadline(Job jobs[], int n){
     maxprofit += jobs[timeslot[i]].profit;
   }
   printf("\nMax Profit: %d\n",maxprofit);
+  getch();
 }
+
+
 
 
