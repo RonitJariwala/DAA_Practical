@@ -1,4 +1,4 @@
-// Online C compiler to run C program online
+#include<conio.h>
 #include <stdio.h>
 #include<limits.h>
 
@@ -29,4 +29,5 @@ void main(){
         scanf("%d",&a[i]);
     }
     printf("Minimum number of multiplications needed to multiply the chain of matrices is %d\n", matrixChain(a,n));
+    getch();
 }
