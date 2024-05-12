@@ -48,11 +48,10 @@ void nqueen(int k,int n){
     }
 }
 
-int main(){
+void main(){
     int k=1,n; 
     printf("Enter number of queens:"); 
     scanf("%d",&n); 
     nqueen(k,n); 
-    return 0;
     getch();
 }
