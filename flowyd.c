@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<conio.h>
 #include<stdlib.h>
 int a[10][10],d[10][10],n;
 
@@ -35,5 +36,6 @@ void main(){
         }
         printf("\n");
     }
+	getch();
 }
     
