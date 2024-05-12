@@ -1,5 +1,6 @@
 #include<stdio.h>
 #include<stdlib.h>
+#include<conio.h>
 #include<limits.h>
 #define MAX_VERTICES 100
 int dist[MAX_VERTICES],prev[MAX_VERTICES],graph[MAX_VERTICES][MAX_VERTICES],Q[MAX_VERTICES],i,j,u,v,V,count,src;
@@ -50,4 +51,5 @@ void main(){
     printf("Enter the source vertex:");
     scanf("%d",&src);
     dijikstra(graph,V,src);
+    getch();
 }
