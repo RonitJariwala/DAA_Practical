@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<conio.h>
 void activitySelection(int s[],int f[],int n){
     int i=0,j;
     printf("Selected activities:\n");
@@ -25,5 +26,5 @@ void main(){
         scanf("%d",&f[i]);
     }
     activitySelection(s,f,n);
-
+    getch();
 }    
