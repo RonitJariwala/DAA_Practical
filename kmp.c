@@ -37,11 +37,12 @@ void KMP_match(char* P,char* T,int m,int n,int* pi){
 void main(){
     int m,n,pi[100];
     char text[]="RONIT";
-    char pattern[]="T";
+    char pattern[]="T";    clrscr();
     m=strlen(pattern);
     n=strlen(text);
     pi[m + 1];
 
     KMP_prefix(pattern,m,pi);
     KMP_match(pattern,text,m,n,pi);
+    getch();
 }
