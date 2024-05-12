@@ -1,5 +1,6 @@
 #include<stdio.h>
 #include<string.h>
+#include<conio.h>
 
 int i, j, m, n, c[10][10];
 char x[10], y[10], b[10][10];
@@ -39,7 +40,7 @@ void lcs() {
     }
 }
 
-int main() {
+void main(){
     printf("Enter 1st sequence:");
     scanf("%s", x);
     printf("Enter 2nd sequence:");
@@ -47,5 +48,5 @@ int main() {
     printf("\nTHE LONGEST COMMON SUBSEQUENCE:");
     lcs();
     print(m, n);
-    return 0;
+    getch();
 }
